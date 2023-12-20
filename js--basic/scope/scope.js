@@ -7,8 +7,8 @@ function greeting(param) {
 //console.log(greet);
 
 //2. Global Scope
-const myName = "Andrian";
 
+const myName = "Andrian";
 function yourName() {
     return myName;
 }
