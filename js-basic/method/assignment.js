@@ -76,6 +76,9 @@ const uniqueNumber = {
     // Hasil return berupa angka kelipatan 5.
     multipleOfFive() {
         // Kerjakan di sini
-        // ...
+        return this.n.filter(num => num % 5 === 0);
     }
 }
+
+const angka = uniqueNumber.multipleOfFive();
+console.log(angka);
