@@ -71,14 +71,27 @@ console.log(suara)
 // #3 Lengkapilah kode di bawah ini
 const uniqueNumber = {
     n: [3, 7, 5, 15, 13, 2, 30, 27, 45],
+    result: [],
     // Buatlah method multipleOfFive() 
     // Method ini me-return sebuah array dari property n 
     // Hasil return berupa angka kelipatan 5.
     multipleOfFive() {
         // Kerjakan di sini
-        return this.n.filter(num => num % 5 === 0);
+        //return this.n.filter(num => num % 5 === 0);
+        let arr = this.n
+        for(let i = 0; 1 < arr.length; i++){
+            //jika n dibagi 5 habis
+            //Maka isi array kosong
+            if(arr[i] % 5 === 0 ) {
+                this.result.push(arr[i])
+                // Alternatif lain
+                // Result = n
+            }
+
+            return this.result
+        }
     }
 }
 
-const angka = uniqueNumber.multipleOfFive();
-console.log(angka);
+const hasil = uniqueNumber.multipleOfFive();
+console.log(hasil);
